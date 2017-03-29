@@ -1,0 +1,21 @@
+/**
+* Strip list-like appearance from lists by removing their bullets, and any
+* indentation.
+*
+*
+* @package  generator-mh-boilerplate
+* @author   Martin Herweg <info@martinherweg.de>
+* @author   David Hellmann <davidhellmann.com@gmail.com>
+* @author   Harry Roberts <https://github.com/inuitcss/inuitcss>
+*/
+
+/*
+|--------------------------------------------------------------------------
+| _objects.list-bare.scss
+|--------------------------------------------------------------------------
+*/
+
+.o-list_bare {
+  margin-left: 0;
+  list-style: none;
+}

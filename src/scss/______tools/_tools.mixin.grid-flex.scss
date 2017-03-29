@@ -1,0 +1,40 @@
+/*--------------------------------------------------
+#GRID FLEX
+--------------------------------------------------*/
+ 
+// Container Flexbox Grid
+// @include container(); // full for 100%
+@mixin flexbox($maxWidth: false) {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
+  @if $maxWidth {
+    max-width: $app-max-width;
+  } @else {
+    max-width: none;
+  }
+}
+
+// Shorthand Version
+@mixin fb($args...) {
+  @include flexbox($args...);
+}
+
+
+
+// Cols Flexbox Grid
+// Optional Setting to remove default gutter
+// @include flexcols(x)
+@mixin flexcols($i) {
+  @if $i > $app-columns {
+    $i: $app-columns;
+  }
+  flex: 0 1 auto;
+  width: ($i / $app-columns * 100%);
+}
+
+// Shorthand Version
+@mixin fc($args...) {
+  @include flexcols($args...);
+}

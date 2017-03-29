@@ -1,0 +1,32 @@
+/**
+ * Spacer Function, uses your $app-gutter-width with the multiplicator you define
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.function.space.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/* USAGE
+ * RESULT
+|--------------------------------------------------------------------------
+| h1 { margin-bottom: space(20); }
+| h1 { margin-bottom: 320px; }
+|--------------------------------------------------------------------------
+*/
+
+
+@function space($key) {
+  @return round(($app-gutter-width * $key) + 0px); /* stylelint-disable-line */
+}
+
+// Shorthand Version
+@function s($key) {
+  @return space($key);
+}

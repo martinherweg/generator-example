@@ -1,0 +1,20 @@
+/**
+ * Load all Element styles
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _elements.scss
+|--------------------------------------------------------------------------
+*/
+
+@import '____elements/elements.headings';
+@import '____elements/elements.images';
+@import '____elements/elements.links';
+@import '____elements/elements.page';
+@import '____elements/elements.quotes';
+@import '____elements/elements.tables';

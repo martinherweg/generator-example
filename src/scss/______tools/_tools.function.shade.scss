@@ -1,0 +1,35 @@
+/**
+ * Slightly darken a color, alternative to native darken() function
+ *
+ *
+ * @package  generator_css
+ * @author   Martin Herweg <mherweg@zonedigital.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.function.shade.scss
+|--------------------------------------------------------------------------
+*/
+
+/* USAGE
+ * RESULT
+|--------------------------------------------------------------------------
+| h1 { color: shade(#bada77, 10%); }
+| h1 { color: rgb(19, 22, 12) | #13160c; }
+|--------------------------------------------------------------------------
+*/
+
+/*
+|--------------------------------------------------------------------------
+| @access public
+| @param {Color} $color - color to shade
+| @param {Number} $percentage - percentage of `$color` in returned color
+| @return {Color}
+|--------------------------------------------------------------------------
+ */
+
+
+@function shade($color, $percentage) {
+  @return mix($color, black, $percentage);
+}

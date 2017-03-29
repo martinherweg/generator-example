@@ -1,0 +1,16 @@
+/**
+ * Description of what this file is for
+ *
+ * @package  generator_css
+ * @author   Martin Herweg <mherweg@zonedigital.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.function.strip_unit.scss
+|--------------------------------------------------------------------------
+*/
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}

@@ -1,0 +1,27 @@
+/**
+ * Default Styles for links
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _elements.links.scss
+|--------------------------------------------------------------------------
+*/
+
+/*--------------------------------------------------
+    #LINKS
+  --------------------------------------------------*/
+
+a {
+  transition: all 0.25s ease('out-cubic');
+
+  color: #fff;
+
+  .no-touchevents &:hover {
+    color: shade(#fff, 80%);
+  }
+}

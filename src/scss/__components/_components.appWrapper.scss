@@ -1,0 +1,21 @@
+/**
+ * App Wrapper Component
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _components.appWrapper.scss
+|--------------------------------------------------------------------------
+*/
+
+
+.c-app_wrapper {
+  color: color('black-90');
+  background: color('white');
+
+  font-family: fontfamily('base');
+  font-weight: 400;
+}

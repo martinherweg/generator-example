@@ -1,0 +1,62 @@
+/**
+ * Button Component and it's variants in size and color
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _components.button.scss
+|--------------------------------------------------------------------------
+*/
+
+
+.c-button {
+  display: inline-block;
+
+  margin: verticalrhythm(1) 0;
+  padding: em-calc(space(0.5)) em-calc(space(2));
+
+  cursor: pointer;
+
+  transition: all 0.5s ease('out-cubic');
+  text-align: center;
+
+  color: color('white');
+  border: 0;
+  background: color('corporate', 'guardsmen-red');
+
+  font-size: fontsize('ms1');
+  font-weight: 700;
+  line-height: $line-height-base-px;
+
+  &:hover {
+    color: color('white');
+    background: darken(color('corporate', 'guardsmen-red'), 5%);
+  }
+}
+
+
+
+.c-button--center {
+  @include center;
+}
+
+.c-button--full {
+  width: 100%;
+}
+
+
+
+/*--------------------------------------------------
+    .c-buttonWrapper
+  --------------------------------------------------*/
+
+.c-button_wrapper {
+  @include container();
+
+  &--center {
+    text-align: center;
+  }
+}

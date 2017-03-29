@@ -1,0 +1,35 @@
+/**
+ * Some Default Values for Breakpoints
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _settings.breakpoints.scss
+|--------------------------------------------------------------------------
+*/
+
+/* stylelint-disable scss/dollar-variable-colon-space-after */
+
+$breakpoint-0:      '';
+$breakpoint-xs:     480px;
+$breakpoint-s:      667px;
+$breakpoint-m:      1024px;
+$breakpoint-l:      1280px;
+$breakpoint-xl:     1680px;
+
+$app-breakpoints: (
+  '0':      $breakpoint-0,
+  'xs':     $breakpoint-xs,
+  's':      $breakpoint-s,
+  'm':      $breakpoint-m,
+  'l':      $breakpoint-l,
+  'xl':     $breakpoint-xl,
+);
+
+$breakpoints: $app-breakpoints;
+
+/* stylelint-enable scss/dollar-variable-colon-space-after */

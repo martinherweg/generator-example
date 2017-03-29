@@ -1,0 +1,24 @@
+/**
+ * Global Variables first included so they can easily get overriden.
+ * and not special enough for an own file.
+ *
+ * @package  Canon CPN
+ * @author   Martin Herweg <info@martinherweg.de>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _settings.global.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/* stylelint-disable scss/dollar-variable-colon-space-after */
+
+$app-max-width:            1092px;
+$app-column-width:          120px; // How wide is one Column
+$app-gutter-width:          16px;  // How much ist the Gutter on each Side
+$app-flexbox:              true;  // Set to false to use floating grid (_objects.grid.scss)
+$app-columns: 12;
+
+/* stylelint-enable scss/dollar-variable-colon-space-after */

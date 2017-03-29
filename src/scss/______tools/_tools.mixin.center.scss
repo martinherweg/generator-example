@@ -1,0 +1,29 @@
+/**
+ * Easily Center item the mixin is used in
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.mixin.center.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/* USAGE
+ * RESULT
+|--------------------------------------------------------------------------
+| h1 { @include center(); }
+| h1 { float: none; margin-left: auto; margin-right: auto; }
+|--------------------------------------------------------------------------
+*/
+
+
+@mixin center {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}

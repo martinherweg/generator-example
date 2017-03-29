@@ -1,0 +1,154 @@
+/**
+ * Place any image- and text-like content side-by-side, as per:
+ * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ * @author   Harry Roberts <https://github.com/inuitcss/inuitcss>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _objects.media.scss
+|--------------------------------------------------------------------------
+*/
+
+
+.o-media {
+  @include clearfix;
+  display: block;
+}
+
+
+.o-media__img {
+  float: left;
+  margin-right: space(1);
+
+  > img {
+    display: block;
+  }
+
+}
+
+
+.o-media__body {
+  display: block;
+
+  overflow: hidden;
+
+  &,
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Size variants
+|--------------------------------------------------------------------------
+*/
+/**
+ * Modify the amount of space between our image and our text. We also have
+ * reversible options for all available sizes.
+ */
+
+
+.o-media--small {
+
+  > .o-media__img {
+    margin-right: space(2);
+  }
+
+  &.o-media--reverse {
+
+    > .o-media__img {
+      margin-right: 0;
+      margin-left: s(2);
+    }
+
+  }
+
+}
+
+
+.o-media--large {
+
+  > .o-media__img {
+    margin-right: space(3);
+  }
+
+  &.o-media--reverse {
+
+    > .o-media__img {
+      margin-right: 0;
+      margin-left: space(3);
+    }
+
+  }
+
+}
+
+
+.o-media--huge {
+
+  > .o-media__img {
+    margin-right: space(4);
+  }
+
+  &.o-media--reverse {
+
+    > .o-media__img {
+      margin-right: 0;
+      margin-left: space(4);
+    }
+
+  }
+
+}
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Reversed Media Object
+|--------------------------------------------------------------------------
+*/
+
+
+.o-media--reverse {
+
+  > .o-media__img {
+    float: right;
+    margin-right: 0;
+    margin-left: space(2);
+  }
+
+}
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Gutterless Media Object
+|--------------------------------------------------------------------------
+*/
+
+
+.o-media--flush {
+
+  > .o-media__img {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+}

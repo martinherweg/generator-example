@@ -1,0 +1,36 @@
+/**
+ * Slightly lighten a color
+ *
+ * @package  generator_css
+ * @author   Martin Herweg <mherweg@zonedigital.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.function.tint.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/* USAGE
+ * RESULT
+|--------------------------------------------------------------------------
+| h1 { color: tint(#bada77, 10%); }
+| h1 { color: rgb(248, 251, 241) | #f8fbf1; }
+|--------------------------------------------------------------------------
+*/
+
+
+/*
+|--------------------------------------------------------------------------
+| @access public
+| @param {Color} $color - color to tint
+| @param {Number} $percentage - percentage of `$color` in returned color
+| @return {Color}
+|--------------------------------------------------------------------------
+ */
+
+
+@function tint($color, $percentage) {
+  @return mix($color, white, $percentage);
+}

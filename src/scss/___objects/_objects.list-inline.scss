@@ -1,0 +1,45 @@
+/**
+ * The list-inline object simply displays a list of items in one line.
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ * @author   Harry Roberts <https://github.com/inuitcss/inuitcss>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _objects.list-inline.scss
+|--------------------------------------------------------------------------
+*/
+
+
+.o-list_inline {
+  margin-left: 0;
+  list-style: none;
+}
+
+
+.o-list_inline__item {
+  display: inline-block;
+}
+
+$app-list-inline-delimiter: ',\00A0' !default;
+
+.o-list_inline--delimited {
+  font-size: 0;
+
+  > .o-list_inline__item {
+    font-size: fontsize('ms0');
+
+  }
+
+  > .o-list_inline__item + .o-list_inline__item {
+
+    &::before {
+      content: '#{$app-list-inline-delimiter}';
+    }
+
+  }
+
+}

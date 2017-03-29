@@ -1,0 +1,33 @@
+/**
+ * Set a default vertical Ryhtm for block elements
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _generic.shared.scss
+|--------------------------------------------------------------------------
+*/
+
+/* stylelint-disable */
+// Same Margins for Elements
+address,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre
+dl, ol, ul,
+figure,
+hr,
+table,
+fieldset {
+  margin-bottom: verticalrhythm(1);
+}
+
+// Consistent indentation for lists.
+dd, ol, ul {
+  margin-left: space(1);
+}
+
+/* stylelint-enable */

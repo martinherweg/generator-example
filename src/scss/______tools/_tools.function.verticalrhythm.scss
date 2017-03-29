@@ -1,0 +1,32 @@
+/**
+ * Multiply your $line-height-base-px with a defined value to get an consitent Vertical Rhytm
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.function.verticalrythm.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/* USAGE
+ * RESULT
+|--------------------------------------------------------------------------
+| h1 { margin-bottom: verticalrhytm(2); }
+| h1 { margin-bottom: 48px; }
+|--------------------------------------------------------------------------
+*/
+
+
+@function verticalrhythm($key) {
+  @return round(($line-height-base-px * $key) + 0px); /* stylelint-disable-line */
+}
+
+// Shorthand Version
+@function vr($key) {
+  @return verticalrhythm($key);
+}

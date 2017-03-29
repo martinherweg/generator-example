@@ -1,0 +1,28 @@
+/**
+ * Default Styles for Images
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _elements.images.scss
+|--------------------------------------------------------------------------
+*/
+
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* stylelint-disable */
+
+img[width],
+img[height] {
+  max-width: none;
+}
+
+/* styleline-enable */

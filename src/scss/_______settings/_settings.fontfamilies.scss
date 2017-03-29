@@ -1,0 +1,25 @@
+/**
+ * Fonts used in your Project
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _settings.fontfamilies.css
+|--------------------------------------------------------------------------
+*/
+
+
+/* stylelint-disable scss/dollar-variable-colon-space-after */
+$font-family-base:      'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
+$font-family-headline:  $font-family-base;
+
+$app-fontfamilies: (
+  'base':               $font-family-base,
+  'headline':           $font-family-headline,
+);
+
+/* stylelint-enable scss/dollar-variable-colon-space-after */

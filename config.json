@@ -1,0 +1,111 @@
+{
+    
+    "proxy"      : "vue-test.dev", 
+    "projectType": "vueapp",
+    "favicon": {
+        "appName"       : "My App",
+        "appDescription": "This is my Application",
+        "developerName" : "Martin Herweg]",
+        "developerURL"  : "https://martinherweg.de",
+        "background"    : "#020307",
+        "path"          : "favicons",
+        "logging"       : false,
+        "online"        : false,
+        "icons"         : {
+            "android"     : true,
+            "appleIcon"   : true,
+            "appleStartup": true,
+            "coast"       : true,
+            "favicons"    : true,
+            "firefox"     : true,
+            "opengraph"   : false,
+            "twitter"     : false,
+            "windows"     : true,
+            "yandex"      : true
+        }
+    },
+    "modernizr"  : {
+        "options"  : [
+            "setClasses",
+            "addTest"
+        ],
+        "excludeTests": [
+            "hidden"
+        ],
+        "tests"    : [
+            "flexbox",
+            "flexboxlegacy"
+        ]
+    },
+    "minify"     : {
+        "images": {
+            "optimizationLevel": 3,
+            "pngquant": {
+                "quality": "75-88",
+                "speed"  : 4
+            },
+            "progressive": true,
+            "interlaced" : true,
+            "svgoPlugins": [
+                {"cleanupIDs"                : false},
+                {"removeComments"            : true},
+                {"removeViewBox"             : false},
+                {"removeDesc"                : true},
+                {"removeUselessDefs"         : false},
+                {"removeDoctype"             : true},
+                {"removeEmptyText"           : true},
+                {"removeUnknownsAndDefaults" : true},
+                {"removeEmptyContainers"     : true},
+                {"collapseGroups"            : true},
+                {"removeUselessStrokeAndFill": true},
+                {"convertStyleToAttrs"       : true}
+            ]
+    }
+    },
+    "src"        : {
+        "base"       : "src/",
+        "views"      : "src/views/",
+        "systemFiles": "src/systemFiles/",
+        "css"        : "src/scss/",
+        "fonts"      : "src/fonts/",
+        "js"         : "src/js/",
+        "favicons"   : "src/favicons/",
+        "images"     : {
+            "base"       : "src/images/",
+            "svg"        : {
+                "base"       : "src/images/svg/",
+                "single"     : "single/",
+                "sprite"     : "sprite/"
+            },
+            "bitmap"     : {
+                "cssimages"  : "cssimages/",
+                "htmlimages" : "htmlimages/"
+            }
+        }
+    },
+    "dist"       : {
+    
+        "base"              : "dist/",
+        "views"             : "dist/",
+        "css"               : "dist/assets/css/",
+        "favicons"          : "dist/favicons/",
+        "fonts"             : "dist/assets/fonts/",
+        "js"                : "dist/assets/js/",
+        "images"            : {
+            "base"          : "dist/assets/images/",
+            "svg"           : {
+                "base"      : "dist/assets/images/svg/",
+                "single"    : "single/",
+                "sprite"    : "sprite/"
+            },
+            "bitmap"        : {
+                "cssimages" : "cssimages/",
+                "htmlimages": "htmlimages/"
+            }
+        }
+    
+
+    }
+}
+
+

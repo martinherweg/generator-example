@@ -1,0 +1,73 @@
+/**
+ * Stacked image-with-text object. A simple abstraction to cover a very commonly
+ * occurring design pattern.
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ * @author   Harry Roberts <https://github.com/inuitcss/inuitcss>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _objects.block.scss
+|--------------------------------------------------------------------------
+*/
+
+
+.o-block {
+  display: block;
+}
+
+
+.o-block__img {
+  margin-bottom: verticalrhythm(1);
+
+
+
+  /*
+  |--------------------------------------------------------------------------
+  | Size Variants
+  |--------------------------------------------------------------------------
+  */
+
+
+  .o-block--flush > & {
+    margin-bottom: 0;
+  }
+
+  .o-block--small > & {
+    margin-bottom: verticalrhythm(2);
+  }
+
+  .o-block--large > & {
+    margin-bottom: verticalrhythm(3);
+  }
+
+  .o-block--huge > & {
+    margin-bottom: verticalrhythm(4);
+  }
+
+}
+
+
+.o-block__body {
+  display: block;
+}
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Alignment variants
+|--------------------------------------------------------------------------
+*/
+
+
+.o-block--right {
+  text-align: right;
+}
+
+.o-block--left {
+  text-align: left;
+}

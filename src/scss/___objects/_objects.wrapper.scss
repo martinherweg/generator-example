@@ -1,0 +1,48 @@
+/**
+ * Page-level constraining and wrapping elements.
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ * @author   Harry Roberts <https://github.com/inuitcss/inuitcss>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _objects.wrapper.scss
+|--------------------------------------------------------------------------
+*/
+
+
+.o-wrapper {
+  @include gutter(1);
+
+  max-width: $app-max-width;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.o-wrapper--float {
+  @include clearfix;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Size Variants
+|--------------------------------------------------------------------------
+*/
+
+
+.o-wrapper--small {
+  @include gutter(2);
+}
+
+.o-wrapper--large {
+  @include gutter(3);
+}
+
+.o-wrapper--huge {
+  @include gutter(4);
+}

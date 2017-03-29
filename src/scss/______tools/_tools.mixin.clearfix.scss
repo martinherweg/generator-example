@@ -1,0 +1,36 @@
+/**
+ * Quick cleafix for your floated Elements container
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.mixin.clearfix.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/* USAGE
+ * RESULT
+|--------------------------------------------------------------------------
+| h1 { @include clearfix(); }
+| h1:after {
+    content: "" !important;
+    display: block !important;
+    clear: both !important;
+  }
+|--------------------------------------------------------------------------
+*/
+
+
+@mixin clearfix {
+
+  &::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}

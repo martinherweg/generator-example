@@ -1,0 +1,30 @@
+/**
+ * Load specific predefined objects or add your own
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _objects.scss
+|--------------------------------------------------------------------------
+*/
+
+/* stylelint-disable */
+
+// @import '___objects/objects.block';
+// @import '___objects/objects.box';
+// @import '___objects/objects.crop';
+// @import '___objects/objects.flag';
+//@import '___objects/objects.grid';
+// @import '___objects/objects.list-bare';
+// @import '___objects/objects.list-inline';
+// @import '___objects/objects.media';
+// @import '___objects/objects.pack';
+// @import '___objects/objects.ratio';
+// @import '___objects/objects.tables';
+@import '___objects/objects.wrapper';
+
+/* stylelint-enable */

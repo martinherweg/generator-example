@@ -1,0 +1,36 @@
+/**
+ * Use boxshadow Map from _settings.boxshadows.scss
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.function.boxshadow.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/* USAGE
+ * RESULT
+|--------------------------------------------------------------------------
+| h1: { box-shadow: boxshadow('1') } // or any other value of the box shadow map
+| h1: { box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 3px 0px, rgba(0, 0, 0, 0.239216) 0px 1px 2px 0px; }
+|--------------------------------------------------------------------------
+*/
+
+@function boxshadow($key) {
+  @if map-has-key($app-boxshadows, $key) {
+    @return map-get($app-boxshadows, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $app-boxshadows."; /* stylelint-disable-line */
+  @return null;
+}
+
+// Shorthand Version
+@function bs($key) {
+  @return boxshadow($key);
+}

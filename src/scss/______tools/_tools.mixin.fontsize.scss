@@ -1,0 +1,52 @@
+/**
+ * Get font-size of _settings.fontsizes.scss or use the mixin to also define the line-height
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.mixin.fontsize.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/* USAGE
+ * RESULT
+|--------------------------------------------------------------------------
+| h1 { font-size: fontsize('ms1); }
+| h1 { font-size: 19.2px; }
+|--------------------------------------------------------------------------
+| h1 { @include fontsize('ms1', 1.2); }
+| h1 { font-size: 19.2; line-height: 1.2; }
+|--------------------------------------------------------------------------
+*/
+
+/* stylelint-disable */
+@function fontsize($key) {
+  @if map-has-key($app-fontsizes, $key) {
+    @return map-get($app-fontsizes, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $app-fontsizes.";
+  @return null;
+}
+
+// Shorthand Version
+@function fs($key) {
+  @return fontsize($key);
+}
+
+
+@mixin fontsize($key, $line-height: $line-height-base ) {
+  font-size: fontsize($key);
+  line-height: $line-height;
+}
+
+// Shorthand Version
+@mixin fs($args...) {
+  @include fontsize($args...);
+}
+/* stylelint-enable */

@@ -1,0 +1,37 @@
+/**
+ * Get Font Family of _settings.fontfamilies.scss
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.function.fontfamily.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/* USAGE
+ * RESULT
+|--------------------------------------------------------------------------
+| h1 { font-family: fontfamily('base'); }
+| h1 { font-family: Roboto, Georgia, "Times New Roman", Times, serif; }
+|--------------------------------------------------------------------------
+*/
+
+
+@function fontfamily($key) {
+  @if map-has-key($app-fontfamilies, $key) {
+    @return map-get($app-fontfamilies, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $app-fontfamilies."; /* stylelint-disable-line */
+  @return null;
+}
+
+// Shorthand Version
+@function ff($key) {
+  @return fontfamily($key);
+}

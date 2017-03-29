@@ -1,0 +1,29 @@
+/**
+ * Vertical align element
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.mixin.vertical-align.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/* USAGE
+ * RESULT
+|--------------------------------------------------------------------------
+| h1 { @include valign(); }
+| h1 { position: relative; top: 50%; transform: translateY(-50%); }
+|--------------------------------------------------------------------------
+*/
+
+
+@mixin valign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

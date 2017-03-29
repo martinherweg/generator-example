@@ -1,0 +1,74 @@
+/* stylelint-disable */
+
+/**
+ * Use 8PX Grid
+ * More Infos about the 8 PX GRID here
+ * URL: https://spec.fm/specifics/8-pt-grid
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _settings.grid.scss
+|--------------------------------------------------------------------------
+*/
+
+
+$app-pixelGrid:            true;  // Do you want to use a PixelGrid
+$app-pixelGridSize:        8px;   // How much Pixels do you want
+$app-columns:              12;    // Set Column Numbers
+$app-column-width:          120px; // How wide is one Column
+$app-gutter-width:          16px;  // How much ist the Gutter on each Side
+$app-flexbox:              true;  // Set to false to use floating grid (_objects.grid.scss)
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------
+    #DON'T EDIT BELOW HERE
+  --------------------------------------------------*/
+
+// Check Pixel Grid Settings and round up to the next possible Value
+@if $app-pixelGrid {
+
+  // Round Numbers
+  $app-roundWidth:   round($app-column-width / $app-pixelGridSize);
+  $app-roundGutter:  round($app-gutter-width / $app-pixelGridSize);
+
+  // Check if the Numbers are equal
+  $app-checkWidth:   $app-roundWidth != $app-column-width / $app-pixelGridSize;
+  $app-checkGutter:  $app-roundGutter != $app-gutter-width / $app-pixelGridSize;
+
+  @if $app-checkWidth or $app-checkGutter {
+
+    $app-column-width:  $app-roundWidth * $app-pixelGridSize;
+    $app-gutter-width:  $app-roundGutter * $app-pixelGridSize;
+
+  } @else {
+
+    $app-column-width:  $app-column-width;
+    $app-gutter-width:  $app-gutter-width
+
+  }
+
+} @else {
+
+  $app-column-width:  $app-column-width;
+  $app-gutter-width:  $app-gutter-width
+
+}
+
+// Set max-width
+$app-max-width: $app-column-width * $app-columns;
+/* stylelint-enable */

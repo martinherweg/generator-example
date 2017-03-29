@@ -1,0 +1,106 @@
+/**
+ * Overview over all Includes and their Order based on ITCSS Structure
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.
+ * @author   Harry Roberts <https://github.com/inuitcss/inuitcss>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| app.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Box Shadows.............Define Project wide Box Shadows
+ * Breakpoints.............Define Project-wide breakpoints
+ * Colors..................Project-wide Colors
+ * Easings.................Project-wide Easings
+ * Font Families...........Project Fonts
+ * Fonts...................Self Hosted Font Files
+ * Font Sizes..............Font Sizes used in the Project
+ * Grid....................Grid Settings
+ *
+ * TOOLS
+ * Box Shdaow Function.....Function to get the Box Shadows defined in the Settings
+ * Color Function..........Function to get the Colors defined in the Settings
+ * Eases Function..........Function to get the Easess defined in the Settings
+ * Em Calc.................Function to calculate EMs of Pixel Values and a fixed base
+ * Font Family Function....Function to get the Font Families defined in the Settings
+ * Rem Calc................Function to calculate REMs of Pixel Values and a fixed base
+ * Shade...................Function mix colors with black to get a darker version
+ * Space...................Function to calculate consistens gutters based on settings
+ * Strip Unit..............Strips the Unit from Values
+ * Tint....................Function mix colors with white to get a lighter version
+ * Vertical Rhythm.........Function to calculate a consitens Vertical Rhythm based on Settings
+ * Font-size...............A mixin which guarantees baseline-friendly line-heights.
+ *
+ * Center..................Small mixin to center a container
+ * Clearfix................Small clearfix mixin
+ * Filter..................Small mixin for CSS Filter Function
+ * Fluid Type..............Powerful Mixin to Fluid Type values
+ * Fontsize................Function and Mixin to get Font Size defined in Settings
+ * Gutter..................Mixin to add consistent Padding Values
+ * Vertical Align..........Small Mixin to Vertical Align Elements
+ * Visually Hidden.........Small Mixin to Visually Hide Elements
+ *
+ * GENERIC
+ * Box-sizing..............Better default `box-sizing`.
+ * Normalize.css...........A level playing field using @necolas’ Normalize.css.
+ * Reset...................A tiny reset to complement Normalize.css.
+ * Shared..................Sensibly and tersely share some global commonalities
+ *                      (particularly useful when managing vertical rhythm).
+ *
+ * ELEMENTS
+ * Headings................Very minimal (i.e. only font-size information) for
+ *                         headings 1 through 6.
+ * Images..................Base image styles.
+ * Links...................Base Link styles.
+ * Page....................Set up our document’s default `font-size` and
+ *                         `line-height`.
+ * Quotes..................Simple Quote styles.
+ * Tables..................Simple table styles.
+ *
+ * OBJECTS
+ * Block...................Image-on-top-of-text object.
+ * Box.....................Simple boxing abstraction.
+ * Crop....................Provide a cropping context for media (images, etc.).
+ * Flag....................Table-layout-based advancement on the Media object.
+ * List-bare...............Lists with no bullets or indents.
+ * List-inline.............A list whose items all site in a line.
+ * Media...................Image- and text-like content side by side. The
+ * Pack....................Pack items into available horizontal space.
+ * Ratio...................A container for maintaining aspect ratio of content.
+ * Table...................Classes for manipulating `table`s.
+ * Wrapper.................Page constraint object.
+ *
+ * VENDORS
+ *
+ *
+ * COMPONENTS
+ * App Footer..............App Footer Component
+ * App Header..............App Header Component
+ * App Wrapper.............App Wrapper Component
+ * Button..................Button Component
+ * Checkbox................Checkbox Component
+ * Input...................Input Component
+ * Radio...................Radio Component
+ *
+ * Trumps
+ */
+
+
+@import 'settings';
+@import 'tools';
+@import 'generic';
+@import 'elements';
+@import 'objects';
+@import 'vendors';
+@import 'components';
+@import 'trumps';

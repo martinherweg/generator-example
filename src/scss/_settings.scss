@@ -1,0 +1,41 @@
+/**
+ * Load all settings files
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _settings.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/*
+|--------------------------------------------------------------------------
+| Global Variables imported First so they can get easily overriden
+|--------------------------------------------------------------------------
+*/
+
+
+@import '_______settings/settings.global';
+
+
+/*
+|--------------------------------------------------------------------------
+| Configure Other App Settings
+|--------------------------------------------------------------------------
+*/
+
+
+@import '_______settings/settings.boxshadows';
+@import '_______settings/settings.breakpoints';
+@import '_______settings/settings.colors';
+@import '_______settings/settings.easings';
+@import '_______settings/settings.fonts';
+@import '_______settings/settings.fontfamilies';
+@import '_______settings/settings.fontsizes';
+@import '_______settings/settings.fontweights';
+//@import '_______settings/settings.grid';

@@ -1,0 +1,103 @@
+/**
+ * Color Maps and Variables
+ * Use Name that Color for color names
+ * URL: http://chir.ag/projects/name-that-color or http://www.color-blindness.com/color-name-hue
+ * CLI: https://github.com/ryanzec/name-that-color
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _settings.color.scss
+|--------------------------------------------------------------------------
+*/
+
+/* stylelint-disable scss/dollar-variable-colon-space-after, indentation */
+
+// Shades of Gray
+$color-white:                         #fff;
+$color-black:                         #000;
+$color-black-5:                       darken($color-white, 5%);
+$color-black-10:                      darken($color-white, 10%);
+$color-black-15:                      darken($color-white, 15%);
+$color-black-20:                      darken($color-white, 20%);
+$color-black-25:                      darken($color-white, 25%);
+$color-black-30:                      darken($color-white, 30%);
+$color-black-35:                      darken($color-white, 35%);
+$color-black-40:                      darken($color-white, 40%);
+$color-black-45:                      darken($color-white, 45%);
+$color-black-50:                      darken($color-white, 50%);
+$color-black-55:                      darken($color-white, 55%);
+$color-black-60:                      darken($color-white, 60%);
+$color-black-65:                      darken($color-white, 65%);
+$color-black-70:                      darken($color-white, 70%);
+$color-black-75:                      darken($color-white, 75%);
+$color-black-80:                      darken($color-white, 80%);
+$color-black-85:                      darken($color-white, 85%);
+$color-black-90:                      darken($color-white, 90%);
+$color-black-95:                      darken($color-white, 95%);
+
+$app-gray-shades: (
+    // Shades of Gray
+    'white':                            $color-white,
+    'black':                            $color-black,
+    'black-5':                          $color-black-5,
+    'black-10':                         $color-black-10,
+    'black-15':                         $color-black-15,
+    'black-20':                         $color-black-20,
+    'black-25':                         $color-black-25,
+    'black-30':                         $color-black-30,
+    'black-35':                         $color-black-35,
+    'black-40':                         $color-black-40,
+    'black-45':                         $color-black-45,
+    'black-50':                         $color-black-50,
+    'black-55':                         $color-black-55,
+    'black-60':                         $color-black-60,
+    'black-65':                         $color-black-65,
+    'black-70':                         $color-black-70,
+    'black-75':                         $color-black-75,
+    'black-80':                         $color-black-80,
+    'black-85':                         $color-black-85,
+    'black-90':                         $color-black-90,
+    'black-95':                         $color-black-95,
+);
+
+/**
+ * Color names generated with http://chir.ag/projects/name-that-color
+ */
+$color-guardsmen-red:               rgb(205, 0, 0);
+$color-gold-drop:                   rgb(239, 125, 1);
+$color-wasabi:                      rgb(104, 151, 49);
+$color-deep-cerulean:               rgb(0, 107, 182);
+$color-violet-eggplant:             rgb(165, 16, 128);
+$color-cod-gray:                    rgb(17, 17, 17);
+$color-mine-shaft:                  rgb(34, 34, 34);
+$color-gondola:                     rgb(54, 54, 54);
+$color-dove-gray:                   rgb(114, 114, 114);
+$color-mercury:                     rgb(234, 234, 234);
+
+
+$app-colored: (
+    'corporate': (
+        // Colored
+        'guardsmen-red':             $color-guardsmen-red,
+        'gold-drop':                 $color-gold-drop,
+        'wasabi':                    $color-wasabi,
+        'deep-cerulean':             $color-deep-cerulean,
+        'violet-eggplant' :          $color-violet-eggplant,
+    ),
+    'cod-gray':                       $color-cod-gray,
+    'mine-shaft':                     $color-mine-shaft,
+    'gondola':                        $color-gondola,
+    'dove-gray':                      $color-dove-gray,
+    'mercury':                        $color-mercury
+);
+
+// Merge Gray Shades and Colored Map
+$app-colors: map-merge($app-colored, $app-gray-shades);
+
+
+/* stylelint-enable scss/dollar-variable-colon-space-after, indentation */

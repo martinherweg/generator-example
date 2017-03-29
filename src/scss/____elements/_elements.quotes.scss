@@ -1,0 +1,32 @@
+/**
+ * Default styles for Blockquotes
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _elements.quotes.scss
+|--------------------------------------------------------------------------
+*/
+
+
+blockquote {
+  margin: verticalrhythm(2) 0;
+
+  p {
+    @include fluid-type(font-size, $ms-width-min, $ms-width-max, $ms-font-min * $ms3, $ms-font-max * $ms3);
+    font-family: fontfamily('headline');
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  //footer {
+  //
+  //  cite {
+  //
+  //  }
+  //}
+}

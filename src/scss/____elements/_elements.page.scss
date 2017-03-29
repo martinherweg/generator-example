@@ -1,0 +1,28 @@
+/**
+ * Default Styles for html and body Element
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _elements.page.scss
+|--------------------------------------------------------------------------
+*/
+
+
+html {
+  overflow-y: scroll;
+
+  height: 100%;
+
+  font-family: fontfamily('base');
+  @include fluid-type(font-size, $ms-width-min, $ms-width-max, $ms-font-min, $ms-font-max);
+  line-height: $line-height-base;
+}
+
+body {
+  height: 100%;
+}

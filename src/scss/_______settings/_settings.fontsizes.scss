@@ -1,0 +1,67 @@
+/**
+ * Set up your Font Sizes, uses Fluid Type and Modular Scale as a default
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _settings.fontsizes.scss
+|--------------------------------------------------------------------------
+*/
+
+/*--------------------------------------------------
+    #FONT SIZES
+  --------------------------------------------------*/
+
+/* stylelint-disable scss/dollar-variable-colon-space-after */
+
+$font-size-min:          16px;
+$font-size-max:          18px;
+$line-height-base:       1.5;
+$line-height-base-px:    $font-size-min * $line-height-base + 0px; /* stylelint-disable-line length-zero-no-unit */
+$rem-base: $font-size-min;
+$em-base: $font-size-min;
+
+
+
+// Modular Scale Settings
+$ms-width-min:           480px;
+$ms-width-max:           $app-max-width;
+$ms-factor:              1.2;
+
+
+
+// Nothing to change here
+$ms1:                   $ms-factor;
+$ms2:                   $ms-factor * $ms-factor;
+$ms3:                   $ms-factor * $ms-factor * $ms-factor;
+$ms4:                   $ms-factor * $ms-factor * $ms-factor * $ms-factor;
+$ms5:                   $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor;
+$ms6:                   $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor;
+$ms7:                   $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor;
+$ms8:                   $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor;
+$ms9:                   $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor * $ms-factor;
+$ms-font-min:            $font-size-min;
+$ms-font-max:            $font-size-max;
+
+
+// Font Map
+$app-fontsizes: (
+  'ms-2':               12px,
+  'ms-1':               15px,
+  'ms0':                $font-size-min,
+  'ms1':                $font-size-min * $ms1,
+  'ms2':                $font-size-min * $ms2,
+  'ms3':                $font-size-min * $ms3,
+  'ms4':                $font-size-min * $ms4,
+  'ms5':                $font-size-min * $ms5,
+  'ms6':                $font-size-min * $ms6,
+  'ms7':                $font-size-min * $ms7,
+  'ms8':                $font-size-min * $ms8,
+  'ms9':                $font-size-min * $ms9,
+);
+
+/* stylelint-enable scss/dollar-variable-colon-space-after */

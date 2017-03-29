@@ -1,0 +1,67 @@
+/**
+ * Input Component
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _components.input.scss
+|--------------------------------------------------------------------------
+*/
+
+
+.c-input,
+.c-input:focus {
+  appearance: none;
+  border: 0;
+  outline: none;
+}
+
+.c-input,
+.c-input:not([type='submit']) {
+  appearance: none;
+  display: inline-block;
+
+  width: 100%;
+
+  margin-bottom: verticalrhythm(1);
+  padding: space(1);
+
+  transition: all 0.5s ease('out-cubic');
+
+  color: color('black-90');
+  border: 1px solid c('black-10');
+  outline: 0;
+  background: darken(c('white'), 5%);
+
+  @include fontsize('ms0');
+}
+
+
+.c-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+
+/* stylelint-disable */
+
+// Placeholder Color
+::-webkit-input-placeholder {
+   color: color('black-40');
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: color('black-40');
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: color('black-40');
+}
+
+:-ms-input-placeholder {
+   color: color('black-40');
+}
+/* stylelint-enable */

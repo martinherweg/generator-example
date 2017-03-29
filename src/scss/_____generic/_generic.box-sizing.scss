@@ -1,0 +1,27 @@
+/**
+ * Set the global box-sizing
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _generic.box-sizing.scss
+|--------------------------------------------------------------------------
+*/
+
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}

@@ -1,0 +1,172 @@
+/* stylelint-disable */
+
+/*--------------------------------------------------
+    .o-grid
+  --------------------------------------------------*/
+
+// Set Gutters for the different Breakpoints
+%gridGutter {
+  @include gutter(1);
+
+  @include media('>=s') {
+    @include gutter(1)
+  }
+
+  @include media('>=m') {
+    @include gutter(1)
+  }
+
+  @include media('>=l') {
+    @include gutter(2)
+  }
+
+  @include media('>=xl') {
+    @include gutter(2)
+  }
+}
+
+
+.o-grid {
+  @if $app-flexbox {
+    @include flexbox(true);
+  } @else {
+    @include container(true);
+  }
+
+  @include center();
+
+  &--full {
+    @if $app-flexbox {
+      @include flexbox();
+    } @else {
+      @include container();
+    }
+  }
+}
+
+
+.o-grid__inner {
+  @if $app-flexbox {
+    @include flexbox(true);
+  } @else {
+    @include container(true);
+  }
+
+  @include center();
+
+  &--full {
+    @if $app-flexbox {
+      @include flexbox();
+    } @else {
+      @include container();
+    }
+
+    .o-col--noGutter & {
+      @include gutter(0);
+    }
+  }
+
+  .o-col--noGutter & {
+    > .o-col {
+      @include gutter(0);
+    }
+  }
+}
+
+
+.o-col {
+  @if $app-flexbox {
+    @include flexcols(12);
+  } @else {
+    @include cols(12);
+  }
+
+  @extend %gridGutter;
+
+  &:last-child > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.o-col--1-of-2 {
+  @if $app-flexbox {
+    @include flexcols(12);
+  } @else {
+    @include cols(12);
+  }
+
+  @include media('>=s') {
+    @if $app-flexbox {
+      @include flexcols(6);
+    } @else {
+      @include cols(6);
+    }
+  }
+}
+
+.o-col--1-of-3 {
+  @if $app-flexbox {
+    @include flexcols(12);
+  } @else {
+    @include cols(12);
+  }
+
+  @include media('>=s') {
+    @if $app-flexbox {
+      @include flexcols(4);
+    } @else {
+      @include cols(4);
+    }
+  }
+}
+
+.o-col--1-of-4 {
+  @if $app-flexbox {
+    @include flexcols(12);
+  } @else {
+    @include cols(12);
+  }
+
+  @include media('>=s') {
+    @if $app-flexbox {
+      @include flexcols(6);
+    } @else {
+      @include cols(6);
+    }
+  }
+
+  @include media('>=m') {
+    @if $app-flexbox {
+      @include flexcols(3);
+    } @else {
+      @include cols(3);
+    }
+  }
+}
+
+.o-col--1-of-6 {
+  @if $app-flexbox {
+    @include flexcols(12);
+  } @else {
+    @include cols(12);
+  }
+
+  @include media('>=s') {
+    @if $app-flexbox {
+      @include flexcols(2);
+    } @else {
+      @include cols(2);
+    }
+  }
+}
+
+.o-col--1-of-12 {
+  @if $app-flexbox {
+    @include flexcols(1);
+  } @else {
+    @include cols(1);
+  }
+}
+
+
+/* stylelint-enable */

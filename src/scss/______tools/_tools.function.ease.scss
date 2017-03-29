@@ -1,0 +1,37 @@
+/**
+ * Get an ease of _settings.easings.scss
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.function.eases.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/* USAGE
+ * RESULT
+|--------------------------------------------------------------------------
+| h1 { transition: all 0.3s ease('in-quad); }
+| h1 { transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+|--------------------------------------------------------------------------
+*/
+
+
+@function ease($key) {
+  @if map-has-key($app-easings, $key) {
+    @return map-get($app-easings, $key);
+  }
+
+  @warn "Unkown '#{$key}' in $app-easings."; /* stylelint-disable-line */
+  @return null;
+}
+
+// Shorthand Version
+@function e($key) {
+  @return ease($key);
+}

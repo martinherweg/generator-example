@@ -1,0 +1,33 @@
+/**
+ * Overall map-getter function, you can pass a map and one or two $keys depending on the map
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.function.map-getter.scss
+|--------------------------------------------------------------------------
+*/
+/**
+   * @param   variable $map      Pass Map you want to get.
+   * @param   string   $key      The Key you want of the map
+   * @return  string   $second   If the map has a nested Map pass a second $key
+   */
+
+/* stylelint-disable */
+@function map-getter($map, $key, $second: null) {
+ @if $second {
+   @if map-has-key($map, $key) {
+     @return map-get(map-get($map, $key), $second);
+   }
+
+ }  @else {
+   @if map-has_key($map, $key) {
+     @return map-get($map, $key);
+   }
+ }
+}
+
+/* styleline-enable */

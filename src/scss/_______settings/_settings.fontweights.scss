@@ -1,0 +1,31 @@
+/**
+ * Define all Possible FontWeights
+ *
+ * @package  Canon CPN
+ * @author   Martin Herweg <mherweg@zonedigital.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _settings.fontweights.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/* stylelint-disable indentation */
+
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-book: 400;
+$font-weight-regular: 500;
+$font-weight-bold: 700;
+
+$fontweights: (
+    'extra-light': $font-weight-extra-light,
+    'light': $font-weight-light,
+    'book': $font-weight-book,
+    'regular': $font-weight-regular,
+    'bold': $font-weight-bold
+);
+
+/* stylelint-enable indentation */

@@ -1,0 +1,27 @@
+{
+    "plugins": [
+        "stylelint-scss",
+        "stylelint-selector-bem-pattern",
+        "stylelint-order"
+    ],
+    "extends": "stylelint-config-sass-guidelines",
+    "rules": {
+        "stylelint-disable-reason": null,
+        "max-nesting-depth": 3,
+        "selector-class-pattern": [
+            "^(?:u|is|has|c|o|no|h)-([a-z0-9][a-z0-9]*)(_[a-z0-9]+)*?([_a-z0-9]*(?:--[a-z0-9_]*)*)$|^(?!:u|is|has|c|o|no|h)([a-z][a-z0-9]*)(_[a-z0-9]+)*?([_a-z0-9]*(?:--[a-z_]*)*)$",
+            {
+                "message": "Selector should be written in lowercase with underscore (selector-class-pattern)"
+            }
+        ],
+        "rule-empty-line-before": [
+            "always-multi-line",
+            {
+                "ignore": [
+                    "after-comment"
+                ]
+            }
+        ],
+        "order/declaration-block-properties-alphabetical-order": null
+    }
+}

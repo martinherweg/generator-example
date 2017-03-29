@@ -1,0 +1,24 @@
+/**
+ * Different Background Colors for the Page, can be defined in the CMS
+ *
+ * @package  canon-cps-new.dev
+ * @author   Martin Herweg <mherweg@zonedigital.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _objects.body
+|--------------------------------------------------------------------------
+*/
+
+
+
+.o-body--dark_gray {
+  color: #fff;
+  background: color('cod-gray');
+}
+
+.o-body_black {
+  color: #fff;
+  background: #000;
+}
